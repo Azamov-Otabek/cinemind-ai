@@ -1,75 +1,210 @@
-# React + TypeScript + Vite
+# 🎬 CineMind AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **AI-powered movie discovery and personal cinema workspace.**
 
-Currently, two official plugins are available:
+CineMind AI is a modern movie and TV discovery application built with **React + TypeScript**. The project is designed as a production-style frontend portfolio project with a cinematic dashboard interface, real movie data, personal collections, and future AI-powered recommendations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The goal is not only to browse movies, but to create a smarter place where users can **discover, organize, save, and eventually find movies through natural-language AI requests**.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚧 Project Status
 
-## Expanding the ESLint configuration
+**Currently in active development.**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The application is being built feature by feature with a focus on reusable architecture, clean UI, real API integration, state management, CRUD operations, and production-ready frontend practices.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Current progress
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- ✅ Main application layout
+- ✅ Sidebar navigation
+- ✅ Header and search UI
+- ✅ Nested routing structure
+- ✅ Global SCSS design system
+- ✅ Reusable color and layout variables
+- 🚧 Home page UI
+- ⏳ Movie API integration
+- ⏳ Personal library & collections
+- ⏳ AI Movie Finder
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
+## ✨ Planned Features
+
+- 🎬 Discover movies and TV shows
+- 🔥 Trending, popular, and top-rated titles
+- 🔍 Movie and TV search
+- 🎭 Genre filtering and sorting
+- ⭐ Ratings, metadata, cast, and movie details
+- 🎞️ Trailer viewing
+- ❤️ Personal watchlist / My List
+- 📚 Custom movie collections
+- ✏️ Create, edit, and delete collections
+- 🔐 User authentication
+- 🤖 AI Movie Finder
+- 🎯 Personalized movie recommendations
+- 📱 Responsive desktop, tablet, and mobile experience
+
+---
+
+## 🧠 AI Movie Finder
+
+One of CineMind AI's main planned features is an AI-assisted movie finder.
+
+Instead of searching only by title or genre, users will be able to describe what they want to watch in natural language.
+
+For example:
+
+> *“I want a dark sci-fi movie about space with a strong emotional story.”*
+
+The AI layer will interpret the request and help surface relevant movie recommendations.
+
+---
+
+## 🛠 Tech Stack
+
+### Current
+
+- **React**
+- **TypeScript**
+- **Vite**
+- **React Router**
+- **Zustand**
+- **Axios**
+- **SCSS / Sass**
+- **Lucide React**
+- **Inter Variable Font**
+
+### Planned integrations
+
+- **TMDB API** — movie and TV data
+- **Firebase Authentication** — user accounts
+- **Firebase Firestore** — personal lists and CRUD features
+- **OpenAI API** — AI-powered movie discovery
+
+---
+
+## 🗺 Roadmap
+
+### Phase 1 — UI & Layout
+
+- [x] Main layout
+- [x] Sidebar
+- [x] Header
+- [x] Application navigation
+- [ ] Home hero section
+- [ ] Movie cards
+- [ ] Content sections
+- [ ] Movie details page
+- [ ] Remaining page layouts
+
+### Phase 2 — Movie Data
+
+- [ ] TMDB API setup
+- [ ] Trending movies
+- [ ] Popular movies
+- [ ] Search
+- [ ] Genres and filters
+- [ ] Movie details
+- [ ] Cast and recommendations
+
+### Phase 3 — User Features & CRUD
+
+- [ ] Authentication
+- [ ] My List
+- [ ] Favorites
+- [ ] Collections
+- [ ] Create collections
+- [ ] Edit collections
+- [ ] Delete collections
+
+### Phase 4 — AI
+
+- [ ] AI Movie Finder interface
+- [ ] Secure AI API integration
+- [ ] Natural-language movie requests
+- [ ] AI-assisted recommendations
+
+### Phase 5 — Production Polish
+
+- [ ] Responsive design
+- [ ] Loading and skeleton states
+- [ ] Error handling
+- [ ] Accessibility improvements
+- [ ] Lazy loading / code splitting
+- [ ] Performance optimization
+- [ ] Final documentation
+- [ ] Deployment
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Azamov-Otabek/cinemind-ai.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Move into the project directory:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+cd cinemind-ai
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+---
+
+## 📸 Screenshots
+
+Project screenshots and a live demo will be added as the main UI reaches a presentable release stage.
+
+---
+
+## 🎯 Project Goals
+
+CineMind AI is being built to demonstrate practical frontend development skills such as:
+
+- scalable React component architecture
+- TypeScript in a real application
+- client-side routing
+- state management
+- REST API integration
+- CRUD workflows
+- authentication
+- responsive UI development
+- async loading and error states
+- AI feature integration
+- production-oriented code organization
+
+---
+
+## 👨‍💻 Author
+
+**Otabek Azamov**  
+Frontend Developer
+
+GitHub: [@Azamov-Otabek](https://github.com/Azamov-Otabek)
+
+---
+
+<p align="center">
+  <strong>CineMind AI</strong> — discover your next movie smarter.
+</p>
