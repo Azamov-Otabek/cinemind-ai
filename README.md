@@ -2,9 +2,18 @@
 
 > **AI-powered movie discovery and personal cinema workspace.**
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-7C3AED?style=for-the-badge&logo=github)](https://azamov-otabek.github.io/cinemind-ai/)
+[![Status](https://img.shields.io/badge/status-active%20development-F59E0B?style=for-the-badge)](https://github.com/Azamov-Otabek/cinemind-ai)
+
 CineMind AI is a modern movie and TV discovery application built with **React + TypeScript**. The project is designed as a production-style frontend portfolio project with a cinematic dashboard interface, real movie data, personal collections, and future AI-powered recommendations.
 
 The goal is not only to browse movies, but to create a smarter place where users can **discover, organize, save, and eventually find movies through natural-language AI requests**.
+
+## 🌐 Live Demo
+
+**https://azamov-otabek.github.io/cinemind-ai/**
+
+> The project is still in active development, so the live version will evolve as new features are completed.
 
 ---
 
@@ -22,6 +31,7 @@ The application is being built feature by feature with a focus on reusable archi
 - ✅ Nested routing structure
 - ✅ Global SCSS design system
 - ✅ Reusable color and layout variables
+- ✅ Automated GitHub Pages deployment
 - 🚧 Home page UI
 - ⏳ Movie API integration
 - ⏳ Personal library & collections
@@ -74,6 +84,8 @@ The AI layer will interpret the request and help surface relevant movie recommen
 - **SCSS / Sass**
 - **Lucide React**
 - **Inter Variable Font**
+- **GitHub Actions**
+- **GitHub Pages**
 
 ### Planned integrations
 
@@ -134,7 +146,7 @@ The AI layer will interpret the request and help surface relevant movie recommen
 - [ ] Lazy loading / code splitting
 - [ ] Performance optimization
 - [ ] Final documentation
-- [ ] Deployment
+- [x] Deployment
 
 ---
 
@@ -174,7 +186,7 @@ npm run build
 
 ## 📸 Screenshots
 
-Project screenshots and a live demo will be added as the main UI reaches a presentable release stage.
+Project screenshots will be added as the main UI reaches a more complete release stage.
 
 ---
 
@@ -192,6 +204,7 @@ CineMind AI is being built to demonstrate practical frontend development skills 
 - responsive UI development
 - async loading and error states
 - AI feature integration
+- automated deployment
 - production-oriented code organization
 
 ---
