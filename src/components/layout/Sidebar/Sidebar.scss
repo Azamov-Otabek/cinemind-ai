@@ -1,0 +1,88 @@
+@use "../../../styles/variables" as *;
+
+.sidebar {
+  width: $sidebar-width;
+  min-height: 100vh;
+  background: $bg-secondary;
+  border-right: 1px solid $border;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar__logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 32px;
+
+  span{
+    color: $text-primary;
+  }
+
+  strong{
+    color: $color-light-primary;
+  }
+}
+
+.sidebar__navigation{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  .sidebar-link{
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    border-radius: 10px;
+    padding: 12px 14px;
+    gap: 12px;
+    
+
+    color: $text-secondary;
+    font-size: 14px;
+    font-weight: 500;
+
+    &:hover{
+      color: $text-primary;
+      background: $bg-hover;
+    }
+  }
+
+  .active{
+    color: $text-primary;
+    background: rgba(124, 58, 237, 0.18);
+
+    &:hover{
+      color: $text-primary;
+      background: rgba(124, 58, 237, 0.18);
+    }
+  }
+}
+
+
+.sidebar__divider{
+  height: 1px;
+  background: $border;
+  margin: 10px 0;
+}
+
+.logout-btn{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: transparent;
+  color: $danger;
+
+  &:hover {
+  background: rgba(239, 68, 68, 0.1);
+  }
+
+}
+

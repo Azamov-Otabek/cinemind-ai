@@ -1,0 +1,119 @@
+@use "../../../styles/variables" as *;
+
+.header {
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  background: $bg-primary;
+  border-bottom: 1px solid $border;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  width: 420px;
+  height: 42px;
+  background: $bg-secondary;
+  border: 1px solid $border;
+  border-radius: 12px;
+  padding: 0 12px;
+  gap: 10px;
+}
+
+.header__search-input {
+  flex: 1;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: $text-primary;
+  font-size: 14px;
+
+  &::placeholder {
+    color: $text-muted;
+  }
+}
+
+.header__search-icon {
+  color: $text-secondary;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header__notification {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: transparent;
+  color: $text-secondary;
+
+  &:hover {
+    background: $bg-hover;
+    color: $text-primary;
+  }
+
+  span{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $danger;
+    top: 8px;
+    right: 8px;
+  }
+}
+
+.header__profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px;
+  border-radius: 12px;
+
+  &:hover {
+    background: $bg-hover;
+  }
+}
+
+.header__profile-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: $text-primary;
+  font-size: 12px;
+  font-weight: 700;
+  background: linear-gradient(135deg, $color-primary, $color-light-primary);
+}
+
+.header__profile-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    .profile-info--name{
+        font-size: 13px;
+        font-weight: 600;
+        color: $text-primary;
+    }
+
+    .profile-info--role{
+        font-size: 10px;
+        color: $text-muted;
+    }
+}
+
+.header__profile-ChevronDown{
+    color: $text-secondary;
+
+}
