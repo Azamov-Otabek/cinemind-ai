@@ -11,49 +11,51 @@ import AiFinder from "../pages/AiFinder/AiFinder";
 import Profile from "../pages/Profile/Profile";
 import Settings from "../pages/Settings/Settings";
 
-export const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <MainLayout />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "movies",
-        element: <Movies />,
-      },
+const basename =
+  import.meta.env.BASE_URL === "/"
+    ? "/"
+    : import.meta.env.BASE_URL.replace(/\/$/, "");
 
-      {
-        path: "tv-shows",
-        element: <TvShows />,
-      },
-
-      {
-        path: "my-list",
-        element: <MyList />,
-      },
-
-      {
-        path: "collections",
-        element: <Collections />,
-      },
-
-      {
-        path: "ai-finder",
-        element: <AiFinder />,
-      },
-
-      {
-        path: "profile",
-        element: <Profile />,
-      },
-
-      {
-        path: "settings",
-        element: <Settings />,
-      },
-    ],
-  },
-]);
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <MainLayout />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "movies",
+          element: <Movies />,
+        },
+        {
+          path: "tv-shows",
+          element: <TvShows />,
+        },
+        {
+          path: "my-list",
+          element: <MyList />,
+        },
+        {
+          path: "collections",
+          element: <Collections />,
+        },
+        {
+          path: "ai-finder",
+          element: <AiFinder />,
+        },
+        {
+          path: "profile",
+          element: <Profile />,
+        },
+        {
+          path: "settings",
+          element: <Settings />,
+        },
+      ],
+    },
+  ],
+  { basename },
+);
