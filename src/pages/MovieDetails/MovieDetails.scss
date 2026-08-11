@@ -1,0 +1,99 @@
+@use "../../styles/variables" as *;
+
+.movie-details {
+  position: relative;
+  display: grid;
+  gap: 40px;
+  min-height: calc(100vh - 72px);
+  align-items: center;
+  padding: 48px;
+  grid-template-columns: 340px 1fr;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 11, 18, 0.96) 0%,
+      rgba(8, 11, 18, 0.85) 45%,
+      rgba(8, 11, 18, 0.6) 100%
+    ),
+    url("../../assets/images/intersteller.jpg") center / cover no-repeat;
+}
+
+.movie-details__poster {
+  aspect-ratio: 2 / 3;
+  border-radius: 16px;
+  background: $bg-card;
+}
+
+.movie-details__poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.movie-details__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.movie-details__title {
+  font-size: 42px;
+  margin-top: 8px;
+  color: $text-primary;
+}
+
+.movie-details__description {
+  max-width: 650px;
+  margin-top: 18px;
+  line-height: 1.7;
+  color: $text-secondary;
+}
+
+.movie-details__meta,
+.movie-details__actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.movie-details__meta span:first-child {
+  color: $rating;
+  font-weight: 600;
+}
+
+.movie-details__button {
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.movie-details__button--primary {
+  background: $color-primary;
+  color: $text-primary;
+}
+
+.movie-details__button--secondary {
+  background: $bg-hover;
+  color: $text-primary;
+  border: 1px solid $border;
+}
+
+.movie-details-back-btn {
+  position: absolute;
+  top: 30px;
+  left: 48px;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: $bg-hover;
+  color: $text-primary;
+}

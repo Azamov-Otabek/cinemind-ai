@@ -1,0 +1,58 @@
+@use "../../styles/variables" as *;
+
+.movies-page {
+  padding: 32px;
+}
+
+.movies-page__header h1 {
+  font-size: 32px;
+  color: $text-primary;
+}
+
+.movies-page__header p {
+  margin-top: 6px;
+  color: $text-secondary;
+}
+
+.movies-page__filters {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.movies-page__filters button {
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 10px;
+  background: $bg-card;
+  color: $text-secondary;
+  border: 1px solid $border;
+}
+
+.movies-page__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: space-between;
+  gap: 28px 20px;
+  margin-top: 32px;
+}
+
+.movies-page__filters select {
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 10px;
+  background: $bg-card;
+  color: $text-secondary;
+  border: 1px solid $border;
+  outline: none;
+}
+
+.movies-page__filters input {
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 10px;
+  background: $bg-card;
+  color: $text-primary;
+  border: 1px solid $border;
+  outline: none;
+}

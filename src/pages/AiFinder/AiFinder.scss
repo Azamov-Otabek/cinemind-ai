@@ -1,0 +1,101 @@
+@use "../../styles/variables" as *;
+
+.ai-finder {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 64px 32px;
+}
+
+.ai-finder__header {
+  text-align: center;
+}
+
+.ai-finder__header h1 {
+  margin-top: 14px;
+  font-size: 40px;
+  color: $text-primary;
+}
+
+.ai-finder__header p {
+  max-width: 600px;
+  margin: 12px auto 0;
+  color: $text-secondary;
+  line-height: 1.6;
+}
+
+.ai-finder__form {
+  margin-top: 40px;
+}
+
+.ai-finder__form textarea {
+  width: 100%;
+  min-height: 160px;
+  padding: 20px;
+  border-radius: 16px;
+  resize: vertical;
+  background: $bg-card;
+  border: 1px solid $border;
+  color: $text-primary;
+  outline: none;
+}
+
+.ai-finder__form button {
+  min-height: 48px;
+  margin-top: 16px;
+  padding: 0 22px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+
+  background: $color-primary;
+  color: $text-primary;
+  font-weight: 600;
+}
+
+.ai-finder__filters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.ai-finder__filters select {
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 10px;
+  background: $bg-card;
+  color: $text-secondary;
+  border: 1px solid $border;
+  outline: none;
+}
+
+.ai-finder__results {
+  margin-top: 48px;
+}
+
+.ai-finder__results h2 {
+  color: $text-primary;
+  font-size: 24px;
+}
+
+.ai-finder__results p {
+  margin-top: 8px;
+  color: $text-secondary;
+}
+
+.ai-finder__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+
+.ai-finder__answer {
+  margin-top: 16px;
+  white-space: pre-wrap;
+  color: $text-secondary;
+  line-height: 1.7;
+}

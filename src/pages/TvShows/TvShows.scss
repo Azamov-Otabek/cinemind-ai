@@ -1,0 +1,48 @@
+@use "../../styles/variables" as *;
+
+.tv-page {
+  padding: 32px;
+}
+
+.tv-page__header h1 {
+  font-size: 32px;
+  color: $text-primary;
+}
+
+.tv-page__header p {
+  margin-top: 6px;
+  color: $text-secondary;
+}
+
+.tv-page__filters {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.tv-page__filters select,
+.tv-page__filters input {
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 10px;
+  background: $bg-card;
+  color: $text-secondary;
+  border: 1px solid $border;
+  outline: none;
+}
+
+.tv-page__filters input {
+  color: $text-primary;
+}
+
+.tv-page__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: space-between;
+  gap: 28px 20px;
+  margin-top: 32px;
+}
+
+.tv-page__empty {
+  color: $text-secondary;
+}

@@ -1,0 +1,72 @@
+@use "../../styles/variables" as *;
+
+.media-card {
+  width: 200px;
+  cursor: pointer;
+
+
+  transition: 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.media-card__poster {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  border-radius: 16px;
+  background: $bg-card;
+  overflow: hidden;
+  background: linear-gradient(180deg, $bg-hover, $bg-card);
+}
+
+.media-card__title {
+  margin-top: 12px;
+  font-size: 16px;
+  color: $text-primary;
+}
+
+.media-card__meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  color: $text-secondary;
+  font-size: 14px;
+}
+
+.media-card__poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.media-card:hover .media-card__poster img {
+  transform: scale(1.05);
+}
+
+.media-card__rating {
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: rgba(245, 158, 11, 0.12);
+  color: $rating;
+}
+
+.media-card__bookmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+
+  display: grid;
+  place-items: center;
+
+  background: rgba(8, 11, 18, 0.75);
+  color: $text-primary;
+}

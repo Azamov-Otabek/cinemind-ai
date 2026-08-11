@@ -1,0 +1,51 @@
+@use "../../styles/variables" as *;
+
+
+.collection-details {
+  padding: 32px;
+}
+
+.collection-details__hero {
+  min-height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.collection-details__overlay {
+  min-height: 380px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(
+    to top,
+    rgba(8, 11, 18, 0.95),
+    rgba(8, 11, 18, 0.2)
+  );
+}
+
+.collection-details__overlay h1 {
+  font-size: 40px;
+  color: $text-primary;
+}
+
+.collection-details__overlay p {
+  margin-top: 10px;
+  color: $text-secondary;
+}
+
+.collection-details__overlay span {
+  margin-top: 12px;
+  color: $color-light-primary;
+  font-weight: 600;
+}
+
+.collection-details__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: space-between;
+  gap: 28px 20px;
+  margin-top: 32px;
+}

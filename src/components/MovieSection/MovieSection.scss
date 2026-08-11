@@ -1,0 +1,30 @@
+@use "../../styles/variables" as *;
+
+.movie-section {
+  margin-top: 32px;
+}
+
+.movie-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-section__header h2 {
+  font-size: 24px;
+  color: $text-primary;
+}
+
+.movie-section__header button {
+  color: $color-light-primary;
+  background: transparent;
+  font-weight: 600;
+}
+
+.movie-section__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
